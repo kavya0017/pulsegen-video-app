@@ -1,0 +1,120 @@
+📹 Pulsegen – Video Processing Platform
+
+A full-stack video upload, processing, and streaming platform built as part of the Pulsegen.io assignment.
+The application enables users to securely upload videos, track real-time processing progress, classify content sensitivity, and stream processed videos efficiently.
+
+🚀 Project Overview
+
+Pulsegen is a multi-tenant video processing platform that demonstrates a complete end-to-end workflow:
+
+User authentication & authorization
+
+Secure video upload
+
+Automated content sensitivity analysis
+
+Real-time processing updates
+
+Video streaming using HTTP range requests
+
+Role-based access control (RBAC)
+
+The project is designed with scalability, modularity, and clean architecture in mind.
+
+🧩 Features Implemented
+🔐 Authentication & Authorization
+
+User registration and login using JWT
+
+Secure password hashing with bcrypt
+
+Token-based protected routes
+
+User-level data isolation (multi-tenant architecture)
+
+🎥 Video Management
+
+Video upload using Multer
+
+Secure server-side storage
+
+Metadata stored in MongoDB
+
+Video status tracking (processing, safe, flagged)
+
+🧠 Sensitivity Processing
+
+Simulated automated content sensitivity analysis
+
+Background processing pipeline
+
+Status updated after processing completes
+
+⚡ Real-Time Updates
+
+Socket.io integration
+
+Live processing status updates pushed to the frontend
+
+No page refresh required
+
+▶️ Video Streaming
+
+Video playback via backend
+
+Efficient streaming using HTTP range requests
+
+👥 Role-Based Access Control (RBAC)
+
+Viewer: View assigned videos
+
+Editor: Upload and manage videos
+
+Admin: Full system access (architecture-ready)
+
+🏗️ Architecture Overview
+Pulsegen-video-app/
+│
+├── backend/
+│   ├── models/        # Mongoose schemas (User, Video)
+│   ├── routes/        # Auth & video APIs
+│   ├── middleware/   # JWT auth & role checks
+│   ├── uploads/       # Uploaded video files
+│   └── server.js      # Express + Socket.io server
+│
+├── frontend/
+│   ├── pages/         # Login, Register, Dashboard
+│   ├── services/      # Axios API wrapper
+│   ├── App.jsx        # Routing & auth guard
+│   └── main.jsx       # React entry point
+│
+└── README.md
+
+🛠️ Tech Stack
+Backend
+
+Node.js
+
+Express.js
+
+MongoDB Atlas
+
+Mongoose
+
+Socket.io
+
+JWT Authentication
+
+Multer
+
+bcrypt
+
+Frontend
+
+React
+
+Vite
+
+Axios
+
+CSS / Tailwind-ready structure
