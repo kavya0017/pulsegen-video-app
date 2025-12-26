@@ -118,3 +118,103 @@ Vite
 Axios
 
 CSS / Tailwind-ready structure
+
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/kavya0017/pulsegen-video-app.git
+cd pulsegen-video-app
+
+2️⃣ Backend Setup
+cd backend
+npm install
+
+
+Create a .env file:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+
+
+Run backend:
+
+node server.js
+
+
+Backend runs on:
+
+http://localhost:5000
+
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm run dev
+
+
+Frontend runs on:
+
+http://localhost:5173
+
+🔄 Complete User Flow
+
+User registers/logs in
+
+JWT token stored securely
+
+User uploads a video
+
+Backend starts processing
+
+Real-time progress updates via Socket.io
+
+Video classified as safe or flagged
+
+User streams processed video
+
+User dashboard shows all uploaded videos
+
+🔍 API Endpoints (Sample)
+
+POST /api/auth/register
+
+POST /api/auth/login
+
+POST /api/videos/upload
+
+GET /api/videos/my-videos
+
+GET /api/videos/stream/:id
+
+🧪 Testing
+
+APIs tested using Thunder Client / Postman
+
+Upload, auth, listing, and streaming verified locally
+
+📌 Assumptions & Design Decisions
+
+Sensitivity analysis is simulated to focus on architecture
+
+Local storage used for videos (cloud-ready design)
+
+Node modules included for ease of evaluation
+
+Designed to be extendable for real ML models & cloud storage
+
+🌱 Future Enhancements
+
+Actual ML-based content moderation
+
+Cloud storage (AWS S3 / GCP)
+
+CDN-based streaming
+
+Video compression & quality variants
+
+Advanced filtering & analytics dashboard
+
+👤 Author
+
+Kavya
+AI & ML Student
+GitHub: https://github.com/kavya0017
